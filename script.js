@@ -1,6 +1,19 @@
 
- //hanoi
+//h2 / h4
+const h2 = document.createElement("h2")
+h2.innerHTML = "Torre de Hanoi"
 
+document.body.appendChild(h2)
+
+const h4 = document.createElement("h4")
+
+h4.innerHTML = "Escolha a dificuldade"
+
+document.body.appendChild(h4) 
+//h2 / h4
+
+
+ //hanoi
 const hanoi = document.createElement("section")
 
 hanoi.classList.add('hanoi')
@@ -35,6 +48,7 @@ const buttons = document.getElementsByClassName('dificuldade')
 
 
 buttons[0].addEventListener("click", () => {
+    
     dificuldade = 5
     return disk()
 })
@@ -46,12 +60,6 @@ buttons[2].addEventListener("click", () => {
     dificuldade = 7
     return disk()
 })
-
-
-
-
-
-
 
 
 

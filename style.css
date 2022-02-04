@@ -1,13 +1,29 @@
 
+body{
+
+    background-color: lightblue;
+}
+h2, h4{
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;  
+}
+
+/* section */
+
 .hanoi{
 
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   height: 450px;
+   height: 350px;
    width: 100%;
-   background: lightblue;
    position: relative;
+   justify-items: center;
 }
+/* section */
+
+/* tower */
 
 .tower{
 
@@ -23,75 +39,86 @@
     content: ' ';
     display: block;
     position: absolute;
-    width: 20px;
+    width: 10px;
     height: 200px;
     background: #000;
     border-radius: 10px 10px 0 0;
 }
 
-.disk1{
-    position: absolute;
-    background-color: red;
-    height: 35px;
-    width: 40px;
-    border-radius: 15px;
+/* tower */
 
+
+/* disk */
+
+.disk1{
+    position: relative;
+    background-color: red;
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    z-index: 2;
 
 }
 
 .disk2{
-    position: absolute;
+    position: relative;
     background-color: green;
-    height: 35px;
-    width: 60px;
+    height: 30px;
+    width: 90px;
     border-radius: 15px;
-
+    z-index: 2;
 
 }
 .disk3{
-    position: absolute;
+    position: relative;
     background-color: blue;
-    height: 35px;
+    height: 30px;
     width: 80px;
     border-radius: 15px;
-
+    z-index: 2;
 
 }
 .disk4{
-    position: absolute;
+    position: relative;
     background-color: yellow;
-    height: 35px;
-    width: 100px;
+    height: 30px;
+    width: 70px;
     border-radius: 15px;
-
+    z-index: 2;
 
 }
 .disk5{
-    position: absolute;
+    position: relative;
     background-color: gray;
-    height: 35px;
-    width: 100px;
+    height: 30px;
+    width: 60px;
     border-radius: 15px;
-
+    z-index: 2;
 
 }
 .disk6{
-    position: absolute;
+    position: relative;
     background-color: white;
-    height: 35px;
-    width: 100px;
+    height: 30px;
+    width: 50px;
     border-radius: 15px;
-
+    z-index: 2;
 
 }
 
+/* disk */
 
 
-
-
+/* dificuldade */
 
 .dificuldade{
     display: flex;
-    width: 30%;
-    height: 10%;
+    width: 60px;
+    height: 20px;
+    margin-top: 20%;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
+
+/* dificuldade */
