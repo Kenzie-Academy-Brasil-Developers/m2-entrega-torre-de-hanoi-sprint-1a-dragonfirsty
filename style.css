@@ -10,6 +10,11 @@ h2, h4{
     flex-direction: column;  
 }
 
+.fimDeJogo{
+    display: none;
+    text-align: center;
+}
+
 /* section */
 
 .hanoi{
@@ -122,3 +127,53 @@ h2, h4{
 }
 
 /* dificuldade */
+
+
+@media (min-width: 768px){
+
+    .tower::after{
+
+    width: 20px;
+
+    }
+
+    .disk1{
+      
+        height: 30px;
+        width: 160px;
+        
+    
+    }
+    
+    .disk2{
+     
+        height: 30px;
+        width: 140px;
+        
+    }
+    .disk3{
+        
+        height: 30px;
+        width: 120px;
+      
+    }
+    .disk4{
+       
+        height: 30px;
+        width: 100px;
+       
+    }
+    .disk5{
+       
+        height: 30px;
+        width: 80px;
+        
+    }
+    .disk6{
+        
+        height: 30px;
+        width: 60px;
+        
+    }
+
+}
